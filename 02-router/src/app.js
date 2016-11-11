@@ -1,24 +1,36 @@
-import $ from 'jquery'
+import $ from 'jquery';
 import router from './router'
-import homeTpl from './templates/home.hbs'
-import contactTpl from './templates/contact.hbs'
-import notFoundTpl from './templates/not-found.hbs'
+import homeTpl from './templates/home.hbs';
+import contactTpl from './templates/contact.hbs';
+import magnusTpl from './templates/magnus.hbs';
+import sergayTpl from './templates/sergay.hbs';
+import notFoundTpl from './templates/not-found.hbs';
 
-const $app = $('#app')
+const $app = $('#app');
 
 function index() {
-  $app.html(homeTpl())
+  $app.html(homeTpl());
 }
 
 function contact() {
-  $app.html(contactTpl())
+  $app.html(contactTpl());
+}
+
+function magnus() {
+  $app.html(magnusTpl());
+}
+
+function sergay() {
+  $app.html(sergayTpl());
 }
 
 function notFound() {
-  $app.html(notFoundTpl())
+  $app.html(notFoundTpl());
 }
 
-router('/', index)
-router('/contact', contact)
-router('*', notFound)
-router()
+router('/', index);
+router('/contact', contact);
+router('/magnus', magnus);
+router('/sergay', sergay);
+router('*', notFound);
+router();
