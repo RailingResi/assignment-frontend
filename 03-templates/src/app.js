@@ -44,7 +44,6 @@ function playersfunc(ctx) {
   else{
     notFound();
   }
-}
 
 function notFound() {
   $app.html(notFoundTpl())

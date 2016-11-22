@@ -34,3 +34,16 @@ router('/magnus', magnus);
 router('/sergay', sergay);
 router('*', notFound);
 router();
+
+const players = {
+    'magnus': {
+        name: 'Magnus Carlsen',
+        image: 'img.jpg',
+        description: 'Lorem ipsum'
+    },
+    'sergery': {
+        name: 'Sergery Karajkin',
+        imag: 'Sergery.jpg',
+        description: 'Lorem ipsum'
+    }
+}
