@@ -1,26 +1,12 @@
 import $ from 'jquery'
 import router from './router'
 import homeTpl from './templates/home.hbs'
-//import magnusTpl from './templates/magnus.hbs'
-//import sergeyTpl from './templates/sergey.hbs'
-import playersTpl from './templates/players.hbs'
+import magnusTpl from './templates/magnus.hbs'
+import sergeyTpl from './templates/sergey.hbs'
 import contactTpl from './templates/contact.hbs'
 import notFoundTpl from './templates/not-found.hbs'
 
-const $app = $('#app');
-
-const players = {
-    'magnus': {
-        name: 'Magnus Carlsen',
-        image: 'img.jpg',
-        description: 'Lorem ipsum'
-    },
-    'sergery': {
-        name: 'Sergery Karajkin',
-        imag: 'Sergery.jpg',
-        description: 'Lorem ipsum'
-    }
-}
+const $app = $('#app')
 
 function index() {
   $app.html(homeTpl())
