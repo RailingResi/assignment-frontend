@@ -11,4 +11,13 @@ export function es5(val) {
 }
 
 export function es6(val) {
+
+    function privatMethode(val){
+        return val;
+    }
+
+    function publicMethode(val){
+      return privatMethode(val);
+    }
+    return publicMethode(val);
 }

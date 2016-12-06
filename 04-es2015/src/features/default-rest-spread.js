@@ -36,4 +36,25 @@ export function es5() {
 }
 
 export function es6() {
+
+  let o = {
+
+    defaults: function (x = 12){
+      return x;
+    },
+
+    rest: function (...x){
+      
+      return x[0]+","+x[1]+","+x[2];
+
+    },
+
+    spread: function (x, y, z = 0){
+
+      return x + y + z;
+
+    }
+  }
+
+  return o ;
 }

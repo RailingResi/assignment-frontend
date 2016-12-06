@@ -39,5 +39,9 @@ export function es5() {
 }
 
 export function es6() {
+
+  const m = new Map(val);
+  m.set('key', {val})
+
   // Just implement the test!
 }

@@ -4,4 +4,5 @@ export function es5() {
 }
 
 export function es6() {
+    return uuidGenerator.v4();
 }

@@ -17,13 +17,9 @@ export default function() {
     }).should.eql(3)
   })
 
-  it.skip('should destructure object and sum up values in ES6', () => {
+  it('should destructure object and sum up values in ES6', () => {
     const d = es6()
-    d({
-      x: 1,
-      y: 2,
-      z: 3
-    }).should.eql(6)
+    d({ x: 1, y: 2, z: 3 }).should.eql(6)
     d({
       x: 1,
       y: 2
